@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <style>
+  .fakeimg { 
+    height: 200px;
+    background: #aaa;
+  }
+
+  .realimg { 
+            text-align: center;
+            max-width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow-x: auto;
+            display: block ;
+  }
+
+  .profile { 
+    text-align: center;
+  }
+
+  .timetable {
+            text-align: center;
+            max-width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow-x: auto;
+            display: block ;
+        }
+
+  .myplace { 
+            text-align: center;
+            max-width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow-x: auto;
+            display: block ;
+  }
+  </style>
+</head>
+<body>
+
+<div class="p-5 bg-primary text-white text-center">
+  <h1>My First Bootstrap 5 Page</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#profile">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#timetable">Time Table</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#myplace">My Place</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+
+      <div class="realimg">
+        <img src="img_aboutme/670710334.jpg ">
+      </div>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#profile">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#timetable">Time Table</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#myplace">My Place</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              My Friends
+          </a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">นายณัฐดนัย สันติชวลิตสกุล</a></li>
+              <li><a class="dropdown-item" href="#">นายสรินทร์ชัย มีศิลป์</a></li>
+              <li><a class="dropdown-item" href="#">ปานรพีกานดา ภูแช่มโชติ</a></li>
+          </ul>
+      </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <div class="myplace" id="myplace";>
+        <h1><b>My Place</b></h1>
+
+        <p class="text-bg-primary"><font face="tahoma" size="5" color="#ffffff"> <b>ราชบุรี</b></font></a></p>
+
+      </div>
+      <div class="fakeimg">Fake Image</div>
+      <div class="profile" id="profile">
+        <h1><b>About Me</b></h1>
+
+        <p class="text-bg-primary"><font face="tahoma" size="5" color="#ffffff">ชื่อ <b>"นายรัฐศาสตร์ ลูกเสือ"</b></font></a></p>
+
+        <p class="text-bg-primary"><font face="tahoma" size="5" color="#ffffff">ชื่อเล่น <b>"ไตเติ้ล"</b></font></a></p>
+
+        <p class="text-bg-primary"><font face="tahoma" size="5" color="#ffffff">วันเกิด <b>"28 เมษายน 2549"</b></font></a></p>
+
+        <p class="text-bg-primary"><font face="tahoma" size="5" color="#ffffff">รหัสนักศึกษา <b>"670710334"</b></font></a></p>
+
+        <p class="text-bg-primary"><font face="tahoma" size="5" color="#ffffff">คณะ <b>"วิทยาศาสตร์"</b></font></a></p>
+
+        <p class="text-bg-primary"><font face="tahoma" size="5" color="#ffffff">สาขา <b>"เทคโนโลยีสารสนเทศ"</b></font></a></p>
+
+      </div>
+
+      <div class="timetable" id="timetable">
+        <h2><b>Time Table</b></h2>
+
+        <table size="1280">
+          <tbody>
+             <tr>
+                <td>
+                   <table border="0" cellspacing="1" cellpadding="1">
+                      <tbody>
+                         <tr bgcolor="#c5e7a2" class="tableHeaderDetail">
+                            <td nowrap="" align="CENTER" width="80"><b>&nbsp;วัน/เวลา</b></td>
+                            <td nowrap="" width="55" colspan="11" align="CENTER" class="tableHeaderDetail"><b>07:35-08:25</b></td>
+                            <td nowrap="" width="55" colspan="11" align="CENTER" class="tableHeaderDetail"><b>08:30-09:20</b></td>
+                            <td nowrap="" width="55.0000000000001" colspan="11" align="CENTER" class="tableHeaderDetail"><b>09:25-10:15</b></td>
+                            <td nowrap="" width="55" colspan="11" align="CENTER" class="tableHeaderDetail"><b>10:20-11:10</b></td>
+                            <td nowrap="" width="55" colspan="11" align="CENTER" class="tableHeaderDetail"><b>11:15-12:05</b></td>
+                            <td nowrap="" width="55.0000000000001" colspan="11" align="CENTER" class="tableHeaderDetail"><b>--</b></td>
+                            <td nowrap="" width="55" colspan="11" align="CENTER" class="tableHeaderDetail"><b>13:00-13:50</b></td>
+                            <td nowrap="" width="55" colspan="11" align="CENTER" class="tableHeaderDetail"><b>13:55-14:45</b></td>
+                            <td nowrap="" width="55.0000000000001" colspan="11" align="CENTER" class="tableHeaderDetail"><b>14:50-15:40</b></td>
+                            <td nowrap="" width="55" colspan="11" align="CENTER" class="tableHeaderDetail"><b>15:45-16:35</b></td>
+                            <td nowrap="" width="55.0000000000001" colspan="11" align="CENTER" class="tableHeaderDetail"><b>16:40-17:30</b></td>
+                            <td nowrap="" width="54.9999999999999" colspan="11" align="CENTER" class="tableHeaderDetail"><b>17:35-18:25</b></td>
+                            <td nowrap="" width="55.0000000000001" colspan="11" align="CENTER" class="tableHeaderDetail"><b>18:30-19:20</b></td>
+                         </tr>
+                         <tr bgcolor="#F0F0F0">
+                            <td rowspan="2" align="CENTER" bgcolor="#A0A0A0" class="tableHeaderDetail"><b>จันทร์</b></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="33" bgcolor="#e5ecff" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>ทักษะการสื่อสารอย่างสร้างสรรค์</font></a></b><font color="#000000"><br>SU203-162 || Sect:2031<br>เรียนออนไลน</font></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="22" bgcolor="#C0D0FF" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>WEB TECHNOLOGY</font></a></b><font color="#000000"><br>520111-165<br>ห้อง 1227/1-2 ชั้น 2 ตึกวิทย์1</font></td>
+                            <td colspan="33" bgcolor="#a8ffa9" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>ความเป็นผู้ประกอบการที่ขับเคลื่อนด้วยนวัตกรรม</font></a></b><font color="#000000"><br>SU401-162 || Sect:2049<br>ห้อง 1203 ตึก 15 ชั้น</font></td>
+                         </tr>
+                         <tr bgcolor="#F0F0F0">
+                         </tr>
+                         <tr bgcolor="#F0F0F0">
+                            <td rowspan="2" align="CENTER" bgcolor="#A0A0A0" class="tableHeaderDetail"><b>อังคาร</b></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="22" bgcolor="#e5ecff" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>ภาษาอังกฤษเพื่อการสื่อสารนานาชาติ</font></a></b><font color="#000000"><br>SU202-162 || Sect:2080<br>เรียนออนไลน</font></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="22" bgcolor="#C0D0FF" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>ทักษะการเขียนโปรแกรมคอมพิวเตอร์ 2</font></a></b><font color="#000000"><br>517122-165<br>ห้อง 1227/1-2 ชั้น 2 ตึกวิทย์1</font></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="22" bgcolor="#FFA0A0" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>สอบ ทักษะการเขียนโปรแกรมคอมพิวเตอร์ 2</font></a></b><font color="#000000"><br>517122-165<br>ห้อง 1227/1-2 ชั้น 2 ตึกวิทย์1</font></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                         </tr>
+                         <tr bgcolor="#F0F0F0">
+                         </tr>
+                         <tr bgcolor="#F0F0F0">
+                            <td rowspan="2" align="CENTER" bgcolor="#A0A0A0" class="tableHeaderDetail"><b>พุธ</b></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="22" bgcolor="#C0D0FF" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>ทักษะการเขียนโปรแกรมคอมพิวเตอร์ 2</font></a></b><font color="#000000"><br>517122-165<br>ห้อง รวท.2 ตึกเรียนรวมวิทย์</font></td>
+                            <td colspan="22" bgcolor="#C0D0FF" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>ทักษะการเขียนโปรแกรมคอมพิวเตอร์ 2</font></a></b><font color="#000000"><br>517122-165<br>ห้อง 1227/1-2 ชั้น 2 ตึกวิทย์1</font></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                         </tr>
+                         <tr bgcolor="#F0F0F0"></tr>
+                         <tr bgcolor="#F0F0F0"> 
+                            <td align="CENTER" bgcolor="#A0A0A0" class="tableHeaderDetail"><b>พฤหัสบดี</b></td> 
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="22" bgcolor="#e5ecff" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>ภาษาอังกฤษเพื่อการสื่อสารนานาชาติ</font></a></b><font color="#000000"><br>SU202-162 || Sect:2080<br>เรียนออนไลน</font></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="33" bgcolor="#C0D0FF" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>โครงสร้างเชิงการคำนวณแบบไม่ต่อเนื่อง</font></a></b><font color="#000000"><br>520111-165<br>ห้อง รวท.1 ตึกเรียนรวมวิทย์</font></td>
+                            <td colspan="33" bgcolor="#a8ffa9" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>ศิลปากรสร้างสรรค์</font></a></b><font color="#000000"><br>SU102-162 || Sect:2316<br>ห้อง 509 ตึก 15 ชั้น</font></td>
+                         </tr>
+                         <tr bgcolor="#F0F0F0">
+                            <td align="CENTER" bgcolor="#A0A0A0" class="tableHeaderDetail"><b>ศุกร์</b></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="33" bgcolor="#e5ecff" align="CENTER" class="headerDetail"><font face="tahoma" size="2" color="##000000"><b>การจัดการสิ่งแวดล้อมในครัวเรือน</font></a></b><font color="#000000"><br>SU138-166 || Sect:2080<br>เรียนออนไลน</font></td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                            <td colspan="11" width="55">&nbsp;</td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </td>
+             </tr>
+          </tbody>
+       </table>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>670710334 นายรัฐศาสตร์ ลูกเสือ</p>
+</div>
+
+</body>
+</html>
